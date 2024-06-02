@@ -81,6 +81,8 @@ function Studentlist() {
     data[Index] = obj;
     setisEdit(false);
     setAdd(false);
+    emptyfield()
+
   };
 
   return (
