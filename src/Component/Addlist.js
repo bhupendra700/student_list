@@ -61,7 +61,7 @@ const Addlist = (props) => {
               type="text"
               placeholder="First Name"
               required
-              pattern="[A-Za-z].{1,}"
+              pattern="[A-Za-z]{1,}"
               value={f_name}
               onChange={(e) => {
                 setf_name(e.target.value);
@@ -70,7 +70,7 @@ const Addlist = (props) => {
             <input
               type="text"
               placeholder="Middle Name"
-              pattern="[A-Za-z].{1,}"
+              pattern="[A-Za-z]{1,}"
               required
               value={m_name}
               onChange={(e) => {
@@ -81,7 +81,7 @@ const Addlist = (props) => {
               type="text"
               placeholder="Last Name"
               required
-              pattern="[A-Za-z].{1,}"
+              pattern="[A-Za-z]{1,}"
               value={l_name}
               onChange={(e) => {
                 setl_name(e.target.value);
@@ -91,7 +91,7 @@ const Addlist = (props) => {
               type="text"
               placeholder="Class"
               required
-              pattern="[0-9]{2}[a-z]{2}"
+              pattern="[0-9]{1,}[a-z]{2}"
               title="Pattern is like 12th"
               value={clas}
               onChange={(e) => {
